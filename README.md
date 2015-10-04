@@ -5,17 +5,17 @@ Angular directives that handles image loading, it has `image-holder` to handle e
   
 ## Installation
 1. Download and import the plugin script.<br />
-`<script src="lib/angular-img-fallback/angular.dcb-img-fallback.min.js"></script>`
+`<script src="lib/angular-img-fallback/angular.img-fallback.min.js"></script>`
 2. Add `dcbImgFallback` to your angular app module dependencies list.<br />
-`angular.module('myAngularApp', ['dcbImgFallback']);`
-3. Add the `fallback-src` attribute to your img<br />
+`angular.module('myAngularApp', ['angularImgFallback']);`
+3. Add the `image` attribute to your img<br />
 `<img image="{{'path/to/img.jpg'}}"  />`
 
 
 ## Usage
 Just add the `image` attribute to your `<img />` tags<br />
 `<img image="{{'path/to/img.jpg'}}"  />`<br />
-Make sure you use `ng-src` as your image src attribute.
+Make sure you don't use `ng-src` as your image src attribute.
 
 
 ## Advanced options

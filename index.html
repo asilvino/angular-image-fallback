@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Angular-image-fallback : Utility to work with loading images, has fallback-src to handle erros in image loading and loading-src for images loading placeholders">
+    <meta name="description" content="Angular-image-fallback : Utility to work with loading images and handling image error, has image-holder to handle errors in image loading and image-loading for images loading placeholders.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/alvarojoao/angular-image-fallback">View on GitHub</a>
 
           <h1 id="project_title">Angular-image-fallback</h1>
-          <h2 id="project_tagline">Utility to work with loading images, has fallback-src to handle erros in image loading and loading-src for images loading placeholders</h2>
+          <h2 id="project_tagline">Utility to work with loading images and handling image error, has image-holder to handle errors in image loading and image-loading for images loading placeholders.</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/alvarojoao/angular-image-fallback/zipball/master">Download this project as a .zip file</a>
@@ -34,49 +34,47 @@
         <h1>
 <a id="angular-image-fallback" class="anchor" href="#angular-image-fallback" aria-hidden="true"><span class="octicon octicon-link"></span></a>Angular Image Fallback</h1>
 
-<p>Angular directives that handles image loading, it has <code>fallback-src</code> to handle errors in image loading and <code>loading-src</code> for placeholder while the image is being loaded.</p>
+<p>Angular directives that handles image loading, it has <code>image-holder</code> to handle errors in image loading and <code>image-loading</code> for placeholder while the image is being loaded.</p>
 
 <h2>
 <a id="bower-download" class="anchor" href="#bower-download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bower Download</h2>
 
-<p><code>bower install angular-img-fallback</code></p>
+<p><code>bower install angular-image-fallback</code></p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <ol>
 <li>Download and import the plugin script.<br>
-<code>&lt;script src="lib/angular-img-fallback/angular.dcb-img-fallback.min.js"&gt;&lt;/script&gt;</code>
+<code>&lt;script src="lib/angular-image-fallback/angular.img-fallback.min.js"&gt;&lt;/script&gt;</code>
 </li>
-<li>Add <code>dcbImgFallback</code> to your angular app module dependencies list.<br>
-<code>angular.module('myAngularApp', ['dcbImgFallback']);</code>
+<li>Add <code>angularImgFallback</code> to your angular app module dependencies list.<br>
+<code>angular.module('myAngularApp', ['angularImgFallback']);</code>
 </li>
-<li>Add the <code>fallback-src</code> attribute to your img<br>
-<code>&lt;img ng-src="{{'path/to/img.jpg'}}" fallback-src /&gt;</code>
+<li>Add the <code>image</code> attribute to your img<br>
+<code>&lt;img image="{{'path/to/img.jpg'}}"  /&gt;</code>
 </li>
 </ol>
 
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>Just add the <code>fallback-src</code> and the <code>loading-src</code> attributes to your <code>&lt;img /&gt;</code> tags<br>
-<code>&lt;img ng-src="{{'path/to/img.jpg'}}" fallback-src loading-src /&gt;</code><br>
-Make sure you use <code>ng-src</code> as your image src attribute.</p>
+<p>Just add the <code>image</code> attribute to your <code>&lt;img /&gt;</code> tags<br>
+<code>&lt;img image="{{'path/to/img.jpg'}}"  /&gt;</code><br>
+Make sure you don't use <code>ng-src</code> as your image src attribute.</p>
 
 <h2>
 <a id="advanced-options" class="anchor" href="#advanced-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced options</h2>
 
 <ul>
-<li><p>Simple usage, will replace to a default missing image placeholder<br>
-<code>&lt;img ng-src="{{'path/to/img.jpg'}}" fallback-src /&gt;</code></p></li>
-<li><p>Custom fallback, will replace to your own custom missing image<br>
-<code>&lt;img ng-src="{{'path/to/img.jpg'}}" fallback-src="{{'path/to/fallback.jpg'}}" /&gt;</code></p></li>
-<li><p>Loading placeholder, show a loading placeholder until image loads<br>
-<code>&lt;img ng-src="{{'path/to/img.jpg'}}" /&gt;</code></p></li>
-<li><p>Custom Loading placeholder, show a custom image loading placeholder until image loads<br>
-<code>&lt;img ng-src="{{'path/to/img.jpg'}}" loading-src="{{'path/to/loading.jpg'}}" /&gt;</code></p></li>
-<li><p>Or both! loading placeholder and a fallback source can work together<br>
-<code>&lt;img ng-src="{{'path/to/img.jpg'}}" loading-src fallback-src /&gt;</code></p></li>
+<li><p>Default:<br>
+<code>&lt;img image="{{image.url}}" /&gt;</code></p></li>
+<li><p>With custom loading placeholder:<br>
+<code>&lt;img image="{{image.url}}" image-loading="/image/loading.gif" /&gt;</code></p></li>
+<li><p>With custom fallback placeholder:<br>
+<code>&lt;img image="{{image.url}}" image-holder="/image/error.png" /&gt;</code></p></li>
+<li><p>With custom fallback and loading placeholders:<br>
+<code>&lt;img image="{{image.url}}" image-loading="/image/loading.gif" image-holder="/image/error.png" /&gt;</code></p></li>
 </ul>
 
 <h2>

@@ -1,6 +1,6 @@
 {
   "name": "angular-img-fallback",
-  "version": "0.1.3",
+  "version": "0.0.1",
   "description": "Utility to work with loading images, has fallback-src to handle errors in image loading and loading-src for images loading placeholders.",
   "main": "angular.dcb-img-fallback.js",
   "scripts": {
@@ -13,10 +13,10 @@
   "keywords": [
     "angularjs"
   ],
-  "author": "Daniel Cohen <dcohenb@gmail.com>",
+  "author": "Alvaro Joao <alvaro@silvino.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dcohenb/angular-img-fallback/issues"
+    "url": "https://github.com/alvarojoao/angular-img-fallback/issues"
   },
-  "homepage": "https://github.com/dcohenb/angular-img-fallback#readme"
+  "homepage": "https://github.com/alvarojoao/angular-img-fallback#readme"
 }

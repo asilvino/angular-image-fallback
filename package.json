@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dcohenb/angular-img-fallback.git"
+    "url": "git+https://github.com/alvarojoao/angular-image-fallback.git"
   },
   "keywords": [
     "angularjs"
@@ -16,7 +16,7 @@
   "author": "Alvaro Joao <alvaro@silvino.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alvarojoao/angular-img-fallback/issues"
+    "url": "https://github.com/alvarojoao/angular-image-fallback/issues"
   },
-  "homepage": "https://github.com/alvarojoao/angular-img-fallback#readme"
+  "homepage": "https://github.com/alvarojoao/angular-image-fallback#readme"
 }

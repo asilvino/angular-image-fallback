@@ -3,10 +3,15 @@ Angular Image Fallback
 
 Angular directives that handles image loading, it has `image-holder` to handle errors in image loading and `image-loading` for placeholder while the image is being loaded.
   
+  
+  
+## Bower Download
+`bower install angular-image-fallback`
+
 ## Installation
 1. Download and import the plugin script.<br />
-`<script src="lib/angular-img-fallback/angular.img-fallback.min.js"></script>`
-2. Add `dcbImgFallback` to your angular app module dependencies list.<br />
+`<script src="lib/angular-image-fallback/angular.img-fallback.min.js"></script>`
+2. Add `angularImgFallback` to your angular app module dependencies list.<br />
 `angular.module('myAngularApp', ['angularImgFallback']);`
 3. Add the `image` attribute to your img<br />
 `<img image="{{'path/to/img.jpg'}}"  />`

@@ -39,6 +39,11 @@ Make sure you don't use `ng-src` as your image src attribute.
 `<img image="{{image.url}}" image-loading="/image/loading.gif" image-holder="/image/error.png" />`
 
 
+## Example:
+
+<iframe width="100%" height="300" src="//jsfiddle.net/alvarojoao/4wec4gsq/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
 
 ## Icons license
 Icons are provided from http://icomoon.io/ under the GNU General Public License v3.0<br />

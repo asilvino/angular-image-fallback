@@ -41,7 +41,7 @@ Make sure you don't use `ng-src` as your image src attribute.
 
 ## Example:
 
-<iframe width="100%" height="300" src="//jsfiddle.net/alvarojoao/4wec4gsq/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+https://jsfiddle.net/joshdmiller/HB7LU/embedded/result/
 
 
 

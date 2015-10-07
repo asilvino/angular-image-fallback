@@ -41,8 +41,7 @@ Make sure you don't use `ng-src` as your image src attribute.
 
 ## Example:
 
-https://jsfiddle.net/joshdmiller/HB7LU/embedded/result/
-
+>     https://jsfiddle.net/alvarojoao/4wec4gsq/embedded/result/
 
 
 ## Icons license

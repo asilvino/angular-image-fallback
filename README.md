@@ -1,4 +1,4 @@
-Angular Image Fallback [![Bower version](https://badge.fury.io/bo/angular-image-fallback.svg)](https://badge.fury.io/bo/angular-image-fallback)
+Angular Image Fallback <a href="https://badge.fury.io/bo/angular-image-fallback"><img src="https://badge.fury.io/bo/angular-image-fallback.svg" alt="Bower version" height="18"></a>
 ======================
 
 Angular directives that handles image loading, it has `image-holder` to handle errors in image loading and `image-loading` for placeholder while the image is being loaded.
